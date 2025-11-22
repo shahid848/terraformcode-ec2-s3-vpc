@@ -18,7 +18,7 @@ module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
   bucket = "my-s3-bucketavik1234567898"
-  acl    = "public_read"
+  acl    = "public-read"
 
   versioning = {
     enabled = true
