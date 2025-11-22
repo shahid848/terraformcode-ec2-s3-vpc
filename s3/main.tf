@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.27"
+      version = "~> 6.5.0"
     }
   }
 
@@ -18,7 +18,7 @@ module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
   bucket = "my-s3-bucketavik1234567898"
-  acl    = "private"
+  acl    = "public_read"
 
   versioning = {
     enabled = true
