@@ -17,7 +17,7 @@ provider "aws" {
 module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
-  bucket = "my-s3-shahid_terraform_bucket"
+  bucket = "bucket = "my-s3-shahid-terraform-bucket-2025"
   acl    = "public-read"
 
   versioning = {
